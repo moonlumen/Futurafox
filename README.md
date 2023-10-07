@@ -13,5 +13,9 @@ A userchrome for the modern era of browsers. Constantly updated to keep your bro
 * /r/firefoxcss
 * Microsoft's Edge and Google's Chrome as an inspiration for design
 
+# To-do
+* Adjust properly for display scaling
+* Adjust properly for high contrast themes
+
 # Customization
 lorem ipsum

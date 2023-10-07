@@ -4,9 +4,9 @@ A userchrome for the modern era of browsers
 ![Promo image](promo-image.png)
 
 # Installation
-1. Download userChrome.css above
-2. Go to `about:profiles` in firefox, open the profile folder you're using (probably the top one)
-3. Drag userChrome.css into a new folder called `chrome` in the profile folder
+Copy the chrome folder and user.js file into your Firefox profile directory. To find your profile directory, go to about:support or about:profiles.
+
+If you have an existing user.js (eg. from Fastfox), just paste Edgefox's user.js content at the end.
 
 # Credits
 * [MrOtherGuy's firefox-csshacks](https://github.com/MrOtherGuy/firefox-csshacks), used for curved tabs

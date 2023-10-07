@@ -6,7 +6,7 @@ A userchrome for the modern era of browsers
 # Installation
 Copy the chrome folder and user.js file into your Firefox profile directory. To find your profile directory, go to about:support or about:profiles.
 
-If you have an existing user.js (eg. from Fastfox), just paste Edgefox's user.js content at the end.
+If you have an existing user.js, paste Edgefox's user.js contents at the end
 
 # Credits
 * [MrOtherGuy's firefox-csshacks](https://github.com/MrOtherGuy/firefox-csshacks), used for curved tabs

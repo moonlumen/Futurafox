@@ -14,10 +14,11 @@ If you have an existing user.js, paste Edgefox's user.js contents at the end
 * Microsoft Edge and Google Chrome as an inspiration
 
 # To-do
-* Adjust properly for display scaling
-* Adjust properly for high contrast themes
-* Linux & macOS support
-* Fix inconsistent/buggy tab bar left margin
+- [ ] Adjust properly for display scaling
+- [ ] Adjust properly for high contrast themes
+- [ ] Linux & macOS support
+- [ ] Fix inconsistent/buggy tab bar left margin
+- [ ] Cleaner, more modular code
 
 # Customization
 lorem ipsum

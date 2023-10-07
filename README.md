@@ -19,6 +19,7 @@ If you have an existing user.js, paste Edgefox's user.js contents at the end
 - [ ] Linux & macOS support
 - [ ] Fix inconsistent/buggy tab bar left margin
 - [ ] Cleaner, more modular code
+- [ ] Fix unreadable popups/alerts
 
 # Customization
 lorem ipsum

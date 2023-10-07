@@ -1,0 +1,55 @@
+/* 
+   Edgefox, a userchrome for the modern era of browsers
+   Licensed under Mozilla Public License Version 2.0, included in files
+   Developed by Moonlumen
+*/
+@import url(curved_tabs.css);
+
+#tabbrowser-tabs {
+  --uc-tab-curve-size: 10px !important; /* 10px looks about like chromium - 17px looks close to Australis tabs */
+  --lwt-selected-tab-background-color: var(--lwt-selected-tab-background-color);
+}
+
+tab {
+  margin-top: 8px !important;
+}
+
+#nav-bar {
+  border-radius: 12px 12px 0px 0px !important;
+  
+}
+
+#navigator-toolbox{
+  border-bottom: none !important;
+}
+
+browser {
+  border-radius: 12px !important;
+  margin: 5px !important;
+}
+
+#tabs-newtab-button > .toolbarbutton-icon,
+  #TabsToolbar #new-tab-button > .toolbarbutton-icon,
+  #alltabs-button > .toolbarbutton-badge-stack,
+  .tab-close-button{ border-radius: 100% !important; }
+
+#urlbar, #urlbar-background {
+  border-radius: 20px !important;
+  --urlbar-icon-border-radius: 20px !important;
+}
+
+.bookmark-item {
+  border-radius: 20px !important;
+  border: 2px solid transparent;
+}
+
+.bookmark-item:hover {
+  border: 2px solid var(--button-hover-bgcolor);
+}
+
+@media all and (display-mode: fullscreen) {
+  browser {
+    border-radius: 0px !important;
+    margin: 0px !important;
+  }
+}

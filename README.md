@@ -1,5 +1,5 @@
 # Edgefox
-A userchrome for the modern era of browsers. Constantly updated to keep your browser bug-free
+A userchrome for the modern era of browsers
 
 ![Promo image](promo-image.png)
 
@@ -10,12 +10,13 @@ A userchrome for the modern era of browsers. Constantly updated to keep your bro
 
 # Credits
 * [MrOtherGuy's firefox-csshacks](https://github.com/MrOtherGuy/firefox-csshacks), used for curved tabs
-* /r/firefoxcss
-* Microsoft's Edge and Google's Chrome as an inspiration for design
+* [/r/firefoxcss](https://reddit.com/r/firefoxcss/)
+* Microsoft Edge and Google Chrome as an inspiration
 
 # To-do
 * Adjust properly for display scaling
 * Adjust properly for high contrast themes
+* Linux & macOS support
 
 # Customization
 lorem ipsum

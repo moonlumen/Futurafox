@@ -8,6 +8,7 @@
 #tabbrowser-tabs {
   --uc-tab-curve-size: 10px !important; /* 10px looks about like chromium - 17px looks close to Australis tabs */
   --lwt-selected-tab-background-color: var(--lwt-selected-tab-background-color);
+   margin-left: 8px;
 }
 
 tab {

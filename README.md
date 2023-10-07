@@ -1,5 +1,5 @@
 # Edgefox
-A userchrome for the modern era of browsers
+A userchrome for the modern era of browsers. Constantly updated to keep your browser bug-free
 
 ![Promo image](promo-image.png)
 

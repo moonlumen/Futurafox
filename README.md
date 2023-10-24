@@ -14,4 +14,4 @@ If you have an existing user.js, paste Edgefox's user.js contents at the end
 * Microsoft Edge and Google Chrome as an inspiration
 
 # Customization
-lorem ipsum
+Edgefox is going to be more modular and customizable in the future; for now, I'll prioritize just developing the theme, or you can simply just edit the CSS!

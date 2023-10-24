@@ -6,27 +6,44 @@
 @import url(curved_tabs.css);
 
 #tabbrowser-tabs {
-  --uc-tab-curve-size: 10px !important; /* 10px looks about like chromium - 17px looks close to Australis tabs */
+  --uc-tab-curve-size: 10px !important;
   --lwt-selected-tab-background-color: var(--lwt-selected-tab-background-color);
-   margin-left: 8px;
+  margin-left: 11px;
 }
 
 tab {
   margin-top: 8px !important;
+  height: 38px;
+}
+
+toolbarbutton {
+  --toolbarbutton-border-radius: 100% !important;
 }
 
 #nav-bar {
   border-radius: 12px 12px 0px 0px !important;
-  
 }
 
+#urlbar[open] > #urlbar-background {
+ border-color: transparent !important;
+}
+
+/* Rmoves popup borders, eg hamburger menu. May affect other things, idk, but it works */
+[part="content"]{border: none !important;}
+#appMenu-fxa-separator{border-image:none !important;}
+
+#tracking-protection-icon {
+  list-style-image: url(chrome://browser/skin/tracking-protection.svg) !important;
+}
+
+
+#star-button {
+  fill: white !important;
+}
+
+/* Remove little line between navbar & webview border */
 #navigator-toolbox{
   border-bottom: none !important;
-}
-
-browser {
-  border-radius: 12px !important;
-  margin: 5px !important;
 }
 
 #tabs-newtab-button > .toolbarbutton-icon,
@@ -39,6 +56,7 @@ browser {
   --urlbar-icon-border-radius: 20px !important;
 }
 
+/* Hack for making bookmarks larger */
 .bookmark-item {
   border-radius: 20px !important;
   border: 2px solid transparent;
@@ -46,6 +64,13 @@ browser {
 
 .bookmark-item:hover {
   border: 2px solid var(--button-hover-bgcolor);
+}
+
+/* Border around webview */
+browser {
+  border-radius: 12px !important;
+  margin: 5px !important;
+  margin-top: 0px !important;
 }
 
 @media all and (display-mode: fullscreen) {

@@ -1,3 +1,6 @@
+# ⚠️ WARNING
+Firefox updates break themes ***ALL THE TIME*** and it is not only Edgefox affected. Please see the issues tab for any fixes or existing reports on breakage!
+
 # Edgefox
 A userchrome for the modern era of browsers
 

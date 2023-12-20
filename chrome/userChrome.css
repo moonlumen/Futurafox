@@ -3,7 +3,7 @@
    Licensed under Mozilla Public License Version 2.0, included in files
    Developed by Moonlumen
 */
-@import url(curved_tabs.css);
+@import url(firefox-csshacks/chrome/curved_tabs.css);
 
 #tabbrowser-tabs {
   --uc-tab-curve-size: 10px !important;

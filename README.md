@@ -1,8 +1,5 @@
-# ⚠️ WARNING
-Firefox updates break themes ***ALL THE TIME*** and it is not only Futurafox affected. Please see the issues tab for any fixes or existing reports on breakage!
-
 # Futurafox
-A userchrome for the modern era of browsers
+A modern Firefox theme.
 
 ![Promo image](promo-image.png)
 
@@ -17,4 +14,4 @@ If you have an existing user.js, paste Futurafox's user.js contents at the end
 * Microsoft Edge and Google Chrome as an inspiration
 
 # Customization
-Futurafox is going to be more modular and customizable in the future; for now, I'll prioritize just developing the theme, or you can simply just edit the CSS!
+Minor customization can be done in the :root class of userchrome.css.

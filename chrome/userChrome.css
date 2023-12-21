@@ -1,19 +1,48 @@
-/* 
-   Edgefox, a userchrome for the modern era of browsers
-   Licensed under Mozilla Public License Version 2.0, included in files
-   Developed by Moonlumen
-*/
 @import url(firefox-csshacks/chrome/curved_tabs.css);
+/*@import url(webviewBorder.css); Uncomment to enable the border around the webview, like in Edge */
 
-#tabbrowser-tabs {
-  --uc-tab-curve-size: 10px !important;
-  --lwt-selected-tab-background-color: var(--lwt-selected-tab-background-color);
-  margin-left: 11px;
+:root{
+  /* Futurafox settings */
+  --futura-tab-height: 34px;
+  --futura-tab-width: 232px;
+  --futura-tab-font-weight: 600;
+  --futura-tab-margin-top: 6px;
+  --futura-tab-margin-left: 30px;
+  --futura-tab-curve-size: 10px;
+  --futura-star-colour: light-dark(black, white);
+  --futura-navbar-rounding: 7px;
+  
+  /* Firefox settings */
+  --urlbar-height: 34.00px; 
+  --urlbar-toolbar-height: 46.00px;
+  --urlbar-icon-border-radius: 20px !important;
+  --tab-selected-bgcolor: var(--toolbar-bgcolor) !important;
 }
 
-tab {
-  margin-top: 8px !important;
-  height: 38px;
+.titlebar-spacer {
+  display: none;
+}
+
+.tab-icon-image[src="chrome://branding/content/icon32.png"] { 
+  content: url("chrome://devtools/skin/images/aboutdebugging-firefox-logo.svg") !important; 
+}
+
+#tabbrowser-tabs {
+  --uc-tab-curve-size: var(--futura-tab-curve-size) !important;
+}
+
+tabs {
+  margin-top: var(--futura-tab-margin-top);
+  margin-left: var(--futura-tab-margin-left) !important;
+  height: var(--futura-tab-height);
+}
+
+.tabbrowser-tab[fadein]:not([style^="max-width"],[pinned]){
+  max-width: var(--futura-tab-width) !important;
+}
+
+.tab-text {
+  font-weight: var(--futura-tab-font-weight);
 }
 
 toolbarbutton {
@@ -21,7 +50,8 @@ toolbarbutton {
 }
 
 #nav-bar {
-  border-radius: 12px 12px 0px 0px !important;
+  border-radius: var(--futura-navbar-rounding) var(--futura-navbar-rounding) 0px 0px !important;
+  height: 46px;
 }
 
 #urlbar[open] > #urlbar-background {
@@ -38,12 +68,12 @@ toolbarbutton {
 
 
 #star-button {
-  fill: white !important;
+  fill: var(--futura-star-colour) !important;
 }
 
 /* Remove little line between navbar & webview border */
 #navigator-toolbox{
-  border-bottom: none !important;
+  border-bottom: 1px solid var(--arrowpanel-border-color) !important;
 }
 
 #tabs-newtab-button > .toolbarbutton-icon,
@@ -53,7 +83,7 @@ toolbarbutton {
 
 #urlbar, #urlbar-background {
   border-radius: 20px !important;
-  --urlbar-icon-border-radius: 20px !important;
+  
 }
 
 /* Hack for making bookmarks larger */
@@ -64,18 +94,4 @@ toolbarbutton {
 
 .bookmark-item:hover {
   border: 2px solid var(--button-hover-bgcolor);
-}
-
-/* Border around webview */
-browser {
-  border-radius: 12px !important;
-  margin: 5px !important;
-  margin-top: 0px !important;
-}
-
-@media all and (display-mode: fullscreen) {
-  browser {
-    border-radius: 0px !important;
-    margin: 0px !important;
-  }
 }

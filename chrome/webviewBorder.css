@@ -1,0 +1,12 @@
+browser {
+  border-radius: 12px !important;
+  margin: 5px !important;
+  margin-top: 0px !important;
+}
+
+@media all and (display-mode: fullscreen) {
+  browser {
+    border-radius: 0px !important;
+    margin: 0px !important;
+  }
+}
